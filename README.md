@@ -1,4 +1,4 @@
-# Tutorial: Criando um Aplicativo de Registro de Usuários com Flask e SQL Server
+# Tutorial: Criando um Aplicativo de Registro de Usuários com Flask e SQL Server Para Shaiya Server
 
 Este tutorial mostrará como criar um aplicativo web de registro de usuários usando Flask, um micro-framework em Python, e o SQL Server como banco de dados. O aplicativo permite que os usuários se registrem fornecendo um nome de usuário, senha e e-mail, e os dados do registro são armazenados no banco de dados SQL Server.
 
