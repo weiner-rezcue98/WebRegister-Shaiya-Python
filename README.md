@@ -18,7 +18,7 @@ Antes de iniciar, certifique-se de que você tenha os seguintes requisitos insta
 1. Clone este repositório para o seu computador:
 
 ```Bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/weiner-rezcue98/WebRegister-Shaiya-Python.git)
 ```
 
 2. Acesse o diretório do projeto:
