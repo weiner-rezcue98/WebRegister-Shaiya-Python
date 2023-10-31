@@ -44,10 +44,9 @@ python app.py
 ```
 
 O aplicativo estará disponível em seu navegador em `http://127.0.0.1:5000/`, onde você poderá acessar o formulário de registro.
+(Pode ser alterado o IP e porta nas últimas linhas do ```app.py```. Certifique-se de abrir as portas desejadas)
 
 ## Personalização
-
-Este é um projeto básico que pode ser personalizado de acordo com suas necessidades. Você pode adicionar recursos adicionais, como autenticação de usuário, validação de formulário, criptografia de senhas, entre outros, para atender aos requisitos específicos do seu projeto.
 
 Certifique-se de ajustar o projeto conforme necessário para torná-lo mais seguro e adequado às suas necessidades.
 
