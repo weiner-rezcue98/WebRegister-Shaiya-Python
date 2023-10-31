@@ -1,49 +1,59 @@
-# Tutorial: Criando um Aplicativo de Registro de Usuários com Flask e SQL Server
+# Projeto Shaiya - Cadastro de Usuários com Flask e SQL Server
+ 
+Este projeto consiste em um aplicativo web simples que permite aos usuários se registrarem fornecendo informações como nome de usuário, senha e e-mail. Os dados de registro são armazenados em um banco de dados SQL Server. Este README fornecerá instruções detalhadas sobre como configurar e executar o aplicativo.
 
-Este tutorial mostrará como criar um aplicativo web de registro de usuários usando Flask, um micro-framework em Python, e o SQL Server como banco de dados. O aplicativo permite que os usuários se registrem fornecendo um nome de usuário, senha e e-mail, e os dados do registro são armazenados no banco de dados SQL Server.
+Para saber sobre o projeto ao todo é necessário seguir o canal do [DanisFilth](https://www.youtube.com/@DanisFilth/videos), todos os arquivos podem ser modificados ao seu valor, mais está voltado ao tutorial do Youtuber Danis.
+
+Incrementos internos: IP do usuário, data de registro, etc.
 
 ## Pré-requisitos
 
-- Python instalado (versão 3.6 ou superior)
-- SQL Server instalado e configurado
-- Conhecimento básico de Python e SQL
+Antes de iniciar, certifique-se de que você tenha os seguintes requisitos instalados:
 
-## Passo 1: Configurando o Ambiente
+- Python (versão 3.6 ou superior): [Download Python](https://www.python.org/downloads/)
+- SQL Server: Certifique-se de ter um servidor SQL Server instalado e configurado com uma tabela chamada `Users_Master` conforme definido no projeto.
 
-Certifique-se de ter o Python instalado. Você pode baixá-lo em [python.org](https://www.python.org/downloads/).
+## Instalação
 
-Instale o Flask executando o seguinte comando no terminal:
+1. Clone este repositório para o seu computador:
 
-```bash
-pip install Flask
+```Bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
 ```
 
-## Passo 2: Criando o Banco de Dados SQL Server
+2. Acesse o diretório do projeto:
 
-Verifique seu banco de dados no SQL Server se está igual a abaixo para armazenar os dados do aplicativo. SQL Server Management Studio (SSMS)
-
-```
-TABLE Users_Master 
-    UserUID INT IDENTITY(1,1) PRIMARY KEY,
-    UserID VARCHAR(18) NOT NULL,
-    Pw VARCHAR(18) NOT NULL,
-    JoinDate SMALLDATETIME NOT NULL,
-    Admin BIT NOT NULL,
-    AdminLevel TINYINT NOT NULL,
-    UseQueue BIT NOT NULL,
-    Status SMALLINT NOT NULL,
-    Leave TINYINT NOT NULL,
-    LeaveDate SMALLDATETIME,
-    UserType CHAR(1) NOT NULL,
-    UserIp VARCHAR(15),
-    Point INT NOT NULL,
-    Enpassword CHAR(32),
-    Birth VARCHAR(10),
-    Email VARCHAR(50) NOT NULL,
-    UserCargo INT NOT NULL,
-    PwName VARCHAR(12) NOT NULL
+```Bash
+cd seu-repositorio
 ```
 
-## IMPORTANTE 
+3. Instale as dependências necessárias usando o pip (gerenciador de pacotes do Python):
 
-Esse projeto é uma adaptação do projeto de DanisFilth em Projeto de Shaiya, é apenas uma parte de seu projeto, tornando uma alternativa de não usar o PHP.
+```Bash
+pip install -r requirements.txt
+```
+
+4. Edite o arquivo `app.py` para configurar o acesso ao seu banco de dados SQL Server. Você precisará fornecer as informações corretas de conexão, incluindo o nome do servidor, nome do banco de dados, nome de usuário e senha.
+
+## Executando o Aplicativo
+
+Para executar o aplicativo, execute o seguinte comando no diretório raiz do projeto:
+
+```Bash
+python app.py
+```
+
+O aplicativo estará disponível em seu navegador em `http://127.0.0.1:5000/`, onde você poderá acessar o formulário de registro.
+
+## Personalização
+
+Este é um projeto básico que pode ser personalizado de acordo com suas necessidades. Você pode adicionar recursos adicionais, como autenticação de usuário, validação de formulário, criptografia de senhas, entre outros, para atender aos requisitos específicos do seu projeto.
+
+Certifique-se de ajustar o projeto conforme necessário para torná-lo mais seguro e adequado às suas necessidades.
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar problemas ou solicitar recursos no repositório. Se desejar contribuir com código, crie um fork do repositório, faça as alterações e envie uma solicitação pull.
+
+Aproveite o uso deste projeto!
+
